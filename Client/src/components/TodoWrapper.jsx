@@ -7,7 +7,12 @@ function TodoWrapper(props) {
     return<>
    { todoarray.map((item) => {
     // console.log(item._id)
-        return <Todo todo={item}  key={item._id} deleteTodo={props.deleteTodo} setDeleteTodo={props.setDeleteTodo}/>
+        return <Todo todo={item}  
+        key={item._id} 
+        deleteTodo={props.deleteTodo} 
+        setDeleteTodo={props.setDeleteTodo}
+        complete={props.complete}
+        setComplete={props.setComplete}/>
    
     })}
     </>

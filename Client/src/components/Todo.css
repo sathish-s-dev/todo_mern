@@ -21,6 +21,16 @@
     color: rgb(0, 128, 0);
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.completed{
+    color: red;
+    text-decoration: line-through;
+}
+.completed:hover{
+    color: red;
+}
+.completed svg {
+    font-size: 20px;
+}
 h3,p{
     padding: 10px 0px;
     margin-left: 10px;

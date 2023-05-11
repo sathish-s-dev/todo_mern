@@ -35,7 +35,7 @@ function AddTodo(props) {
             submitHandler()
             setName('') 
             setDescription('')
-            props.setNewTodo(false)
+            props.setNewTodo(!props.newTodo)
             })} className="todo-input">
         <FaWindowClose className='close' onClick={(() => props.setNewTodo(false))}/>
 

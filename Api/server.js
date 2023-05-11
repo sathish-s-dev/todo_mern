@@ -28,7 +28,7 @@ app.get('/todos',async (req,res)=>{
 })
 
 app.post('/todo/new', async(req, res) =>{
-    const tododata = req.body.body
+    // const tododata = req.body.body
     const todo = new Todo({
         name: req.body.name,
         description: req.body.description,
@@ -49,6 +49,7 @@ app.get('/todo/complete/:id', async (req, res) => {
     todo.completed = !todo.completed,
     todo.save()
     res.send(todo)
+    console.log(todo)
 
 })
 
