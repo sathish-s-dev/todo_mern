@@ -1,0 +1,27 @@
+GET http://localhost:3001/todos
+
+
+###
+
+
+POST http://127.0.0.1:3001/todo/new
+Content-Type: application/json
+
+{
+    "name": "study",
+    "description": "study at 7pm"
+}
+
+###
+
+GET http://localhost:3001/download/
+
+
+###
+
+GET http://localhost:3001/todo/complete/6459f86928f0f18a58660f0c
+
+
+###
+
+GET http://localhost:3001/todo/delete/645a698158345eff3bca1acd
