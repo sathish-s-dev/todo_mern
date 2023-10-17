@@ -25,8 +25,9 @@ form{
     max-width: 400px;
     border: 1px solid black;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     background-color: aliceblue;
     padding: 20px 10px;
     display: flex;

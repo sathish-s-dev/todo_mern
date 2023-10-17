@@ -20,6 +20,7 @@ function Todo(props) {
       const id = props.todo._id
       const todo = axios.get(`http://localhost:3001/todo/delete/${id}`)
       props.setDeleteTodo(!props.deleteTodo)
+      console.log(props.deleteTodo)
     })}/>
 </div>
     )
